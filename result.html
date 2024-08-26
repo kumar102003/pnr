@@ -1,0 +1,132 @@
+ger D<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNR Status - Live Status</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #F0F0F0;">
+    <header style="background-color: #fff;">
+        <div class="nav">
+            <img src="images/horizontal.png"height="52" alt="Logo">
+        </div>
+    </header>
+
+    <div style="position: relative;">
+        <div id="details-section" style="position: absolute;">
+
+            <div id="main-content" class="main-section">
+                <div class="pnr-card train-details">
+                    <div class="pnr-details">
+                        <p style="margin: 0;">PNR : </p>
+                        <p class="pnrNum" id="pnrNum"></p>
+                        <a class="change" href="index.html">change</a>
+                    </div>
+                    <div class="train-de">
+                        <p><span id="trainNo">01027</span> - <span id="trainName">DR GKP Express</span></p>
+                    </div>
+                    <div class="journey-de">
+                        <p><span id="source-station">KYN</span>, <span id="source-station-time">02:57</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      <svg width="16" height="10" viewBox="0 0 16 10" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.745 3.915 12.194.33a.85.85 0 0 0-1.2 0 .87.87 0 0 0 0 1.212l2.097 2.13H.848A.847.847 0 0 0 0 4.526c0 .477.376.857.848.857h12.243L10.994 7.5a.87.87 0 0 0 0 1.212.85.85 0 0 0 .606.257.85.85 0 0 0 .606-.257l3.54-3.574A.876.876 0 0 0 16 4.527a.827.827 0 0 0-.255-.612z" fill="#333" fill-rule="nonzero"></path>
+                        </svg>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span id="dest-station">DEOS</span>, <span id="dest-station-time">01:30</span></p>
+                    </div>
+                    <div class="journey-de">
+                        <p><span id="date">May, 28</span> | <span id="class">3A</span> | <span id="quota">General</span></p>
+                    </div>
+                </div>
+
+                <div class="pnr-card">
+                    <div class="pass-title">
+                        <p>Passengers Detail</p>
+                        <p class="chart-status" id="chart-status"></p>
+                    </div>
+                    <div>
+                        <table>
+                            <thead>
+                                <th style="width: 16%;">S. No</th>
+                                <th style="width: 32%;">Current Status</th>
+                                <th style="width: 32%;">Passenger Details</th>
+                                <th style="width: 20%;">Coach Position</th>
+                            </thead>
+                            <tbody id="table-body">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="refer-section">
+                    <div class="pnr-card refer-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 36 36"><defs><path id="ftrrxlvkpa" d="M1.122 0L6.393 0 6.393 1.178 1.122 1.178z"/></defs><g fill="none" fill-rule="evenodd"><g><g><g><g><g><g><g fill="#ECF5EC"><g transform="translate(-20 -534) translate(12 353) translate(0 27) translate(0 140) translate(8 14)"><circle cx="18" cy="18" r="18"/></g></g><g><path stroke="#5C5C5C" stroke-linecap="round" d="M14.841 18.686H4.743c-1.612 0-2.918-1.306-2.918-2.919V3.93c0-.65.528-1.179 1.179-1.179H16.58c.65 0 1.179.528 1.179 1.179v11.837c0 1.613-1.307 2.919-2.919 2.919z" transform="translate(-20 -534) translate(12 353) translate(0 27) translate(0 140) translate(8 14) translate(7.875 5.625)"/><g transform="translate(-20 -534) translate(12 353) translate(0 27) translate(0 140) translate(8 14) translate(7.875 5.625) translate(5.893)"><mask id="szt8y4119b" fill="#fff"><use xlink:href="#ftrrxlvkpa"/></mask><path stroke="#5C5C5C" stroke-linecap="round" d="M6.393 0.589L1.122 0.589" mask="url(#szt8y4119b)"/></g><path fill="#42A047" d="M6.047 14.679c0 .588-.476 1.064-1.064 1.064-.588 0-1.064-.476-1.064-1.064 0-.589.476-1.065 1.064-1.065.588 0 1.064.476 1.064 1.065M15.614 14.679c0 .588-.477 1.064-1.065 1.064-.587 0-1.064-.476-1.064-1.064 0-.589.477-1.065 1.064-1.065.588 0 1.065.476 1.065 1.065" transform="translate(-20 -534) translate(12 353) translate(0 27) translate(0 140) translate(8 14) translate(7.875 5.625)"/><path stroke="#5C5C5C" stroke-linecap="round" d="M3.515 18.686L.59 24.161M15.793 18.686L18.718 24.161M2.953 23.451L16.354 23.451M5.598 21.068L13.708 21.068M9.361.589L10.414 1.739 10.414 2.752M8.972 11.08H4.855c-.39 0-.707-.317-.707-.707V6.015c0-.39.316-.708.707-.708h4.117c.391 0 .707.317.707.708v4.358c0 .39-.316.707-.707.707z" transform="translate(-20 -534) translate(12 353) translate(0 27) translate(0 140) translate(8 14) translate(7.875 5.625)"/><path stroke="#5C5C5C" stroke-linecap="round" d="M14.712 11.08H4.855c-.39 0-.707-.317-.707-.707V6.015c0-.39.316-.708.707-.708h9.857c.391 0 .707.317.707.708v4.358c0 .39-.316.707-.707.707z" transform="translate(-20 -534) translate(12 353) translate(0 27) translate(0 140) translate(8 14) translate(7.875 5.625)"/></g></g></g></g></g></g></g></g></svg>
+                        <p>Book a return ticket</p>
+                        <a target="_blank" href='https://www.irctc.co.in/nget/train-search'" class="back-btn">Book</a>
+                    </div>
+                    <div class="pnr-card refer-card">
+                        <img src="images/irctc_logo.png" alt="" srcset="">
+                        <p>Visit Official Site</p>
+                        <a target="_blank" href="https://www.irctc.co.in/" class="back-btn">Visit</a>
+                    </div>
+                    <a target="_blank" href="https://www.ecatering.irctc.co.in/">
+                        <div style="background-color: #fdf6ea; border: 1px solid #e7cca8;" class="pnr-card refer-card">
+                            <img src="images/irctc_food.png" alt="" srcset="">
+                            <p>IRCTC Food Booking</p>
+                            <svg class="arrow-svg" width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.333 2.27 0 12 10 2.27 20 0 17.667 7.46 10 0 2.333z" fill="#333"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://www.air.irctc.co.in/">
+                        <div style="background-color: #ecf5ec; border: 1px solid #c6e3c8;" class="pnr-card refer-card">
+                            <img src="images/irctc_flight.png" alt="" srcset="">
+                            <p>IRCTC Flight Booking</p>
+                            <svg class="arrow-svg" width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.333 2.27 0 12 10 2.27 20 0 17.667 7.46 10 0 2.333z" fill="#333"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div id="error-content" class="error-section">
+                <div class="pnr-card">
+                    <div class="pnr-details">
+                        <p style="margin: 0;">PNR : </p>
+                        <p class="pnrNum" id="pnrNum2"></p>
+                        <a class="change" href="index.html">change</a>
+                    </div>
+
+                    <div class="error-content">
+                        <svg class="error_logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none"><path d="M30 60c16.569 0 30-13.431 30-30C60 13.431 46.569 0 30 0 13.431 0 0 13.431 0 30c0 16.569 13.431 30 30 30z" fill="#FBE9E7"></path><path d="M46.73 39.375H27.279a.924.924 0 0 1-.638-.252.84.84 0 0 1-.264-.608v-17.03a.84.84 0 0 1 .264-.608.924.924 0 0 1 .638-.252h19.47c.266 0 .528.05.772.148a2.01 2.01 0 0 1 1.082 1.026c.1.228.15.472.148.718v4.025c.001.247-.049.491-.148.718-.099.228-.245.434-.43.607-.186.177-.409.318-.653.412a2.067 2.067 0 0 1-.77.138h-.613a1.7 1.7 0 0 0-1.173.464c-.311.297-.486.7-.486 1.119 0 .42.175.822.486 1.119a1.7 1.7 0 0 0 1.173.464h.595c.263-.011.525.03.77.123.246.092.468.231.654.41.188.178.338.39.44.622.102.234.155.484.155.737v4.008c.004.25-.047.5-.15.73-.102.231-.254.44-.445.611a2.07 2.07 0 0 1-1.424.551zm-18.551-1.72h18.552a.321.321 0 0 0 .18 0v-4.129l-.217-.172H46.1a3.548 3.548 0 0 1-2.448-.967 3.228 3.228 0 0 1-1.014-2.335c0-.876.365-1.716 1.014-2.336.65-.62 1.53-.967 2.448-.967h.594l1.118-.155h-.901v-4.077l-.217-.172H28.18v15.31zm-4.742 1.72H13.341c-.53 0-1.042-.184-1.442-.516a1.882 1.882 0 0 1-.476-.623 1.804 1.804 0 0 1-.173-.753v-4.008c.005-.247.065-.49.177-.713.112-.222.273-.42.472-.577a2.148 2.148 0 0 1 1.442-.534h.65c.238.034.48.018.712-.046.232-.064.446-.175.628-.325.182-.15.329-.336.429-.545a1.538 1.538 0 0 0 0-1.332 1.608 1.608 0 0 0-.429-.545 1.703 1.703 0 0 0-.628-.326 1.755 1.755 0 0 0-.713-.046h-.649a2.093 2.093 0 0 1-1.45-.526 1.906 1.906 0 0 1-.641-1.349v-4.094c.006-.47.194-.92.526-1.266a2.037 2.037 0 0 1 1.277-.609h10.42c.24 0 .469.09.638.252a.84.84 0 0 1 .264.608v17.03a.842.842 0 0 1-.27.597.924.924 0 0 1-.631.246h-.037zm-10.096-6.072c-.086 0-.17.03-.234.086v4.094c.108.155.198.172.288.172h9.195v-15.31h-9.357s-.18.103-.18.172v4.025s.126.155.288.155h.65a3.64 3.64 0 0 1 1.436.148c.462.144.888.38 1.25.691.36.311.65.691.847 1.116a3.192 3.192 0 0 1 0 2.696 3.331 3.331 0 0 1-.848 1.116 3.523 3.523 0 0 1-1.25.691 3.638 3.638 0 0 1-1.436.148h-.649z" fill="#5C5C5C"></path><rect x="32.083" y="26.875" width="8.333" height="2.083" rx="1.042" fill="#F33939"></rect><rect x="32.083" y="31.041" width="8.333" height="2.083" rx="1.042" fill="#F33939"></rect></svg>
+                        <p class="error-msg">There is some error</p>
+                        <button onclick="location.href='index.html'" class="back-btn">Go Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="position: absolute; width: 100%; background-color: #F0F0F0;" id="load-div" class="load-div">
+            <svg class="pl" viewBox="0 0 200 200" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="pl-grad1" x1="1" y1="0.5" x2="0" y2="0.5">
+                        <stop offset="0%" stop-color="hsl(123, 85%, 46%)" />
+                        <stop offset="100%" stop-color="hsl(123, 42%, 26%)" />
+                    </linearGradient>
+                    <linearGradient id="pl-grad2" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="hsl(123, 85%, 46%)" />
+                        <stop offset="100%" stop-color="hsl(123, 42%, 26%)" />
+                    </linearGradient>
+                </defs>
+                <circle class="pl__ring" cx="100" cy="100" r="82" fill="none" stroke="url(#pl-grad1)" stroke-width="36" stroke-dasharray="0 257 1 257" stroke-dashoffset="0.01" stroke-linecap="round" transform="rotate(-90,100,100)" />
+                <line class="pl__ball" stroke="url(#pl-grad2)" x1="100" y1="18" x2="100.01" y2="182" stroke-width="36" stroke-dasharray="1 165" stroke-linecap="round" />
+            </svg>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
